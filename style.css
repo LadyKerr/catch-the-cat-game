@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+#cat {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://github.com/user-attachments/assets/d62a4d7a-5870-4608-b006-518d4929def6');
+    background-size: cover;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+#stop-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
