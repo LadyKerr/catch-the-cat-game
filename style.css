@@ -42,3 +42,14 @@ body {
     border: none;
     border-radius: 5px;
 }
+
+#pause-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
