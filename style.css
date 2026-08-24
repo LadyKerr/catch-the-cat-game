@@ -38,7 +38,7 @@ body {
     margin-top: 20px;
     cursor: pointer;
     background-color: red;
-    color: white;
+    color: rgb(216, 211, 211);
     border: none;
     border-radius: 5px;
 }
