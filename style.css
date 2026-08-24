@@ -27,7 +27,7 @@ body {
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
-    background-color: green;
+    background-color: rgb(76, 108, 210);
     color: white;
     border: 2px solid green;
 }
@@ -38,7 +38,7 @@ body {
     margin-top: 20px;
     cursor: pointer;
     background-color: red;
-    color: white;
+    color: rgb(216, 211, 211);
     border: none;
     border-radius: 5px;
 }
