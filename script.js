@@ -3,6 +3,7 @@ const scoreDisplay = document.getElementById('score');
 const startButton = document.getElementById('start-button');
 const stopButton = document.getElementById('stop-button');
 const pauseButton = document.getElementById('pause-button');
+const playArea = document.getElementById('play-area');
 
 if (cat && scoreDisplay && startButton && stopButton && pauseButton) {
     let score = 0;
@@ -99,8 +100,11 @@ if (cat && scoreDisplay && startButton && stopButton && pauseButton) {
                     cat.style.top = `${lastPosition.y}px`;
                 } else {
                     const speed = (currentPowerUp === 'slowDown') ? 0.5 : 1;
-                    const x = Math.random() * (window.innerWidth - cat.offsetWidth) * speed;
-                    const y = Math.random() * (window.innerHeight - cat.offsetHeight) * speed;
+                    
+                    // Calculate position based on the play area dimensions
+                    const x = Math.random() * (playArea.offsetWidth - cat.offsetWidth) * speed;
+                    const y = Math.random() * (playArea.offsetHeight - cat.offsetHeight) * speed;
+                    
                     cat.style.left = `${x}px`;
                     cat.style.top = `${y}px`;
                     lastPosition = { x, y };
